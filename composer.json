@@ -12,9 +12,6 @@
         "laravel/framework": "5.1.*"
     },
     "autoload": {
-        "classmap": [
-            "src/controllers"
-        ],
         "psr-0" : {
             "RLStudio\\Admin" : "src"
         }
