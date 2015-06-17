@@ -8,7 +8,9 @@
             "email": "leo@rlstudio.se"
         }
     ],
-    "require": {},
+    "require": {
+        "laravel/framework": "5.1.*"
+    },
     "autoload": {
         "psr-0" : {
             "RLStudio\\Admin" : "src"
