@@ -17,10 +17,8 @@ class AdminServiceProvider extends ServiceProvider
             __DIR__ . '/../config/config.php' => config_path('admin.php'),
         ]);
 
-        $this->
-
         if (! $this->app->routesAreCached()) {
-            require __DIR__.'/routes.php';
+            require __DIR__.'/../../routes.php';
         }
 
         $this->mergeConfigFrom(
