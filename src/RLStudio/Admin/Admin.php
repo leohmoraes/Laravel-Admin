@@ -30,7 +30,7 @@ class Admin
         return config('admin.admin_access');
     }
 
-    public function adminUri()
+    public function loginUri()
     {
         return config('admin.login_uri');
     }
