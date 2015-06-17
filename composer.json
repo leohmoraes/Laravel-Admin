@@ -15,5 +15,8 @@
         "psr-0" : {
             "RLStudio\\Admin" : "src"
         }
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.0"
     }
 }

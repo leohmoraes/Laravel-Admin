@@ -10,8 +10,9 @@ namespace RLStudio\Admin\Controllers;
 
 
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Routing\Controller;
 
-class AuthController
+class AuthController extends Controller
 {
     use AuthenticatesUsers;
 

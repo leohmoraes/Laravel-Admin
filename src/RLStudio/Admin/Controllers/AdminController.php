@@ -8,15 +8,24 @@
 
 namespace RLStudio\Admin\Controllers;
 
+use Illuminate\Routing\Controller;
 
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
-class AdminController
+class AdminController extends Controller
 {
+
+    private $models;
+
+    /**
+     * AdminController constructor.
+     */
+    public function __construct()
+    {
+//        $this->models = new ModelConfig();
+    }
 
     public function getDashboard()
     {
-
+        return view('admin.dashboard');
     }
 
 }

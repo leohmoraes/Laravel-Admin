@@ -30,4 +30,14 @@ return [
     |
     */
     'login_uri' => '/auth/login',
+
+    'models' => [
+        'user' => [
+            'class' => 'App\User',
+            'fields' => [
+                'id',
+                'email',
+            ],
+        ]
+    ]
 ];

@@ -15,6 +15,14 @@ class AuthenticateAdmin
      */
     public function handle($request, Closure $next)
     {
+        if (! \Admin::authenticate()) {
+            if ($request->ajax()) {
+                return response('Unauthorized.', 401);
+            } else {
+                return redirect()->guest(\Admin::loginUri());
+            }
+        }
+
         return $next($request);
     }
 }

@@ -13,6 +13,8 @@ class Admin
 {
     public $app;
 
+    private $modelConfigRoute = 'admin.models';
+
     /**
      * Admin constructor.
      * @param $app
@@ -26,5 +28,21 @@ class Admin
     public function authenticate()
     {
         return config('admin.admin_access');
+    }
+
+    public function adminUri()
+    {
+        return config('admin.login_uri');
+    }
+
+    public function getModelConfigRoute($modelName)
+    {
+        $this->modelConfigRoute .= ".{$modelName}";
+        return $this->modelConfigRoute;
+    }
+
+    public function modelConfig()
+    {
+        return new ModelConfig();
     }
 }
