@@ -6,6 +6,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin', 'namespace' => 'RLSt
     Route::controller('/', 'AuthController');
     Route::controller('/', 'AdminController');
     Route::group(['prefix' => '{model}'], function() {
-        Route::resource('/', )
+        Route::resource('/', 'ModelController');
     });
 });
