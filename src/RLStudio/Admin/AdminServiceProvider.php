@@ -14,7 +14,7 @@ class AdminServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/config.php' => config_path('admin.php'),
+            __DIR__ . '/../../../config/config.php' => config_path('admin.php'),
         ]);
 
         if (! $this->app->routesAreCached()) {
@@ -22,7 +22,7 @@ class AdminServiceProvider extends ServiceProvider
         }
 
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/config.php', 'admin'
+            __DIR__ . '/../../../config/config.php', 'admin'
         );
     }
 
