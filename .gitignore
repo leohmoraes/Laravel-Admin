@@ -19,3 +19,4 @@ CVS
 
 #PhpStorm noise
 .idea
+/vendor/

@@ -1,0 +1,12 @@
+{
+    "name": "rl-studio/laravel-admin",
+    "description": "A bootstrapped laravel admin package focused on flexibility and ease of use",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leo Sjöberg",
+            "email": "leo@rlstudio.se"
+        }
+    ],
+    "require": {}
+}
