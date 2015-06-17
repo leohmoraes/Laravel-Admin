@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
         "psr-0" : {
-            "Weaverryan\\DangerZone" : "src"
+            "RLStudio\\Admin" : "src"
         }
     }
 }
